@@ -9,7 +9,7 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="360dp"
+        android:layout_width="0dp"
         android:layout_height="62dp"
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -75,16 +75,39 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
-<View
-    android:layout_width="0dp"
-    android:layout_height="32dp">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="218dp"
+        tools:layout_editor_absoluteY="226dp">
+
+        <Button
+            android:layout_width="10dp"
+            android:layout_height="120dp" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:color/white"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="136dp" />
+
     <CheckBox
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:checked="false"
+        android:checked="true"
         android:textColorLink="@color/orangeDark"
         android:theme="@style/checkBoxStyle"
         app:layout_constraintEnd_toEndOf="parent"
@@ -93,8 +116,9 @@
         tools:textColorLink="@color/orangeLight" />
 
     <View
+        android:id="@+id/view"
         android:layout_width="303dp"
-        android:layout_height="1dp"
+        android:layout_height="1.5dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
@@ -103,22 +127,45 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="188dp"
-        tools:ignore="MissingConstraints" />
-</View>
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="188dp" />
 
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/math" />
 
-
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="20dp"
-        tools:layout_editor_absoluteX="218dp"
-        tools:layout_editor_absoluteY="226dp"
-        tools:ignore="MissingConstraints">
-
-        <Button
-            android:layout_width="10dp"
-            android:layout_height="120dp" />
-    </LinearLayout>
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Matemática"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.176"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.222" />
 
 </android.support.constraint.ConstraintLayout>
